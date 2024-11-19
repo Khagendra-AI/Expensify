@@ -10,18 +10,13 @@ import {
 import React from 'react';
 import styles from './styles';
 
-const DetailTile = ({
-  type,typeinfo
-}: {
-  type:any,typeinfo:any
-}) => {
+const DetailTile = ({type, typeinfo}: {type: any; typeinfo: any}) => {
   return (
-    <View style={{backgroundColor: 'black',alignItems:'center',paddingTop:20}}>
-      <TouchableOpacity
-        style={styles.container}
-        >
-          <Text style={styles.typesText}>Expenses on{type}</Text>
-          <Text style={styles.typesText}>{typeinfo}</Text>
+    <View
+      style={{backgroundColor: 'black', alignItems: 'center', paddingTop: 20}}>
+      <TouchableOpacity style={styles.container}>
+        <Text style={styles.typesText}>Expenses on{type}</Text>
+        <Text style={styles.typesText}>{typeinfo}</Text>
       </TouchableOpacity>
     </View>
   );
